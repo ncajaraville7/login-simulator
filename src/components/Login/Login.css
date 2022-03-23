@@ -1,0 +1,118 @@
+.login {
+  display: flex;
+  height: 100vh;
+}
+
+@media (max-width: 980px) {
+  .login {
+    flex-direction: column;
+  }
+}
+
+.login__background {
+  background-image: url('../../assets/background.jpg');
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .login__background {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.login__background img {
+  width: 70%;
+  animation: rotatePizza 10s linear infinite;
+}
+
+@media (max-width: 980px) {
+  .login__background img {
+    width: 25rem;
+    height: auto;
+  }
+}
+
+@keyframes rotatePizza {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login__contain {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media (max-width: 980px) {
+  .login__contain {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+.login__contain img {
+  width: 15rem;
+}
+
+.login__contain__text {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login__contain__text h2 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 0.8;
+}
+
+.login__contain__text p {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login__form {
+  margin-top: 2rem;
+}
+
+.login__form h3 {
+  text-align: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.login__form__input-group {
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+.login__form__input-group svg {
+  font-size: 15px;
+}
+
+.login__form__input-group input {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 90%;
+}
+
+.login__form__btn {
+  margin-top: 1.5rem;
+  width: 100%;
+}
